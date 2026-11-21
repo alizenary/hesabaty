@@ -33,3 +33,6 @@ create policy "own records" on public.records
   for all
   using (user_id = auth.uid())
   with check (user_id = auth.uid());
+
+-- صلاحية المستخدمين المسجلين على الجدول (الـ RLS فوق بيقصرها على بياناتهم بس)
+grant select, insert, update, delete on public.records to authenticated;
