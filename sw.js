@@ -1,11 +1,11 @@
 // Service Worker: بيخزن ملفات التطبيق عشان يفتح من غير نت.
 // غيّر رقم النسخة مع كل تحديث عشان الأجهزة تنزّل الملفات الجديدة.
-const VERSION = 'v0.2.0';
+const VERSION = 'v0.3.0';
 const CACHE = `hesabaty-${VERSION}`;
 const FILES = [
   './', './index.html', './manifest.webmanifest', './css/app.css',
   './js/app.js', './js/db.js', './js/calc.js', './js/util.js', './js/i18n.js', './js/ui.js',
-  './js/store.js', './js/txform.js', './js/views.js', './js/export.js', './js/icons.js', './js/filters.js',
+  './js/store.js', './js/txform.js', './js/views.js', './js/export.js', './js/icons.js', './js/filters.js', './js/sync.js',
   './vendor/dexie.mjs', './vendor/xlsx.mjs',
   './fonts/alexandria-arabic-wght-normal.woff2', './fonts/alexandria-latin-wght-normal.woff2', './icons/icon-192.png', './icons/icon-512.png',
 ];
